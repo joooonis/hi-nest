@@ -10,8 +10,8 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Get('/hello') // url을 등록하고 함수를 매핑
+  @Get('/hi') // url을 등록하고 함수를 매핑
   sayHello(): string {
-    return 'Hello everyone!';
+    return this.appService.getHi();
   }
 }
